@@ -89,7 +89,7 @@ def slope_input():
                 print("Invaid input, try again")
             upper = string_inp(upper_input)
             lower = string_inp(lower_input)
-            if not isinstance(upper, int) or not isinstance(lower, int):
+            if (not isinstance(upper, int) or not isinstance(lower, int)):
                 print("Invalid, enter whole numbers")
                 continue
             result = slope_intercept(m, b, upper, lower)
